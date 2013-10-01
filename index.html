@@ -10,21 +10,55 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="styles/db4badba.main.css">
-        <script src="scripts/vendor/d41d8cd9.modernizr.js"></script>
+        <!-- build:css(.tmp) styles/main.css 
+        <link rel="stylesheet" href="styles/main.css"> -->
+        <link href="styles/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="styles/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
     </head>
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+ 
 
-
-        <div class="hero-unit">
-          <h1>Emily Arnett</h1>
+            
+        <div id="myCarousel" class="carousel slide">
+            <div class="heading">
+                <h1 class="text-center">Emily Arnett</h1>
+            </div>
         </div>
+            <div class="container">
+                <div class="coder">
+                    <h2>Web Development Student</h2>
+                    <p>Currently a student on General Assembly Hong Kong's Web Development Immersive course</p>
+                    <p>12 weeks of web programming: All day, every day!</p>
+                    <br>
+                    <p class="text-center"><a class="btn btn-medium btn-primary" href="https://generalassemb.ly/" target="_blank">Visit the GA homepage</a></p>
+                </div>
+                <hr class="featurette-divider">
+                <div class="hk">
+                    <h2>Hong Kong Enthusiast</h2>
+                    <p>Originally from the UK, I moved to HK a year ago and made it my home. Some of my favourite things:</p>
+                        <ul class="text-right">
+                            <li>The weather: Sunshine and warm temperatures all year round, so much better than British winters</li>
+                            <li>The food: Apart from the amazing cantonese food (dim sum!), HK has every international cuisine on offer</li>
+                            <li>There is so much to do here: hiking on the mountains, going to the beach, shopping at the huge malls, eating...</li> 
+                        </ul>
+                </div>
+            </div>
+        
 
 
-        <script src="scripts/d41d8cd9.vendor.js"></script>
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -36,6 +70,8 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <script src="scripts/b6c3df09.main.js"></script>
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
 </body>
 </html>
